@@ -10,6 +10,7 @@
             VerticalOptions="Center">
 
             <Image
+                x:Name="myImage"
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
@@ -29,10 +30,17 @@
                 HorizontalOptions="Center" />
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
+                x:Name="PickImage"
+                Text="Pick Image"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="PickImages"
+                Text="Pick Images"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="PickImages_Clicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
